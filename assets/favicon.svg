@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none">
+  <!-- Deep Navy Background -->
+  <rect width="32" height="32" rx="2" fill="#061430"/>
+  <!-- Blueprint Fine Grid Accent -->
+  <path d="M0 8h32M0 16h32M0 24h32M8 0v32M16 0v32M24 0v32" stroke="#8FD3FF" stroke-opacity="0.08" stroke-width="0.5"/>
+  <!-- Geometric Monoline N -->
+  <!-- Left vertical: (8, 24) to (8, 8) -->
+  <!-- Diagonal: (8, 8) to (24, 24) -->
+  <!-- Right vertical: (24, 24) to (24, 8) -->
+  <path d="M8 24V8L24 24V8" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="square" stroke-linejoin="miter"/>
+  <!-- Accent light-blue node at top right corner -->
+  <circle cx="24" cy="8" r="2.5" fill="#8FD3FF"/>
+  <circle cx="24" cy="8" r="4" stroke="#8FD3FF" stroke-width="0.75" stroke-opacity="0.5"/>
+</svg>

@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#030B1A">
+  <title>Services &amp; Capabilities — NovaTech Solutions</title>
+  <meta name="description" content="Explore NovaTech Solutions' six engineering disciplines: Kubernetes cloud architecture, event streaming with Kafka/Flink, zero-trust security, and 24/7 SRE.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+
+  <!-- Preconnect Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Core Mobile-First Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Accessible Skip Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Compact Engineered Header -->
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a href="index.html" class="brand" aria-label="NovaTech Solutions Home">
+        <svg class="brand-mark" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+          <rect width="32" height="32" rx="4" fill="#0A1F44" stroke="#8FD3FF" stroke-opacity="0.32" stroke-width="1.5"/>
+          <path d="M9 23V9L23 23V9" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="square" stroke-linejoin="miter"/>
+          <circle cx="23" cy="9" r="2.5" fill="#8FD3FF"/>
+        </svg>
+        <div class="brand-type">
+          <span class="brand-name">NovaTech</span>
+          <span class="brand-sub">SOLUTIONS</span>
+        </div>
+      </a>
+
+      <div class="telemetry-status" aria-label="Live System Telemetry">
+        <span class="telemetry-pulse" aria-hidden="true"></span>
+        <span>ENGAGEMENT PROTOCOL // DIRECT</span>
+      </div>
+
+      <nav class="nav-desktop" aria-label="Primary Navigation">
+        <a href="index.html">Home</a>
+        <a href="services.html" class="active">Services</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="about.html">About</a>
+        <a href="insights.html">Insights</a>
+        <a href="careers.html">Careers</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+            <div class="header-actions">
+        <button class="cmd-palette-trigger" type="button" aria-label="Open Command Search (⌘K)">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+            <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+          </svg>
+          <span class="cmd-key-badge">⌘K</span>
+        </button>
+        <a href="contact.html" class="btn btn-primary btn-sm header-cta-desktop">Book Consultation</a>
+        <button class="menu-toggle" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open navigation menu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" aria-hidden="true">
+            <line x1="3" y1="6" x2="21" y2="6"/>
+            <line x1="3" y1="12" x2="21" y2="12"/>
+            <line x1="3" y1="18" x2="21" y2="18"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Full-Screen Mobile Command Center Navigation -->
+  <div id="mobile-menu" class="mobile-menu-overlay" aria-hidden="true">
+    <div class="mobile-menu-links">
+      <a href="index.html" class="mobile-menu-link">
+        <span>Home</span>
+        <span class="link-index">01</span>
+      </a>
+      <a href="services.html" class="mobile-menu-link active">
+        <span>Services</span>
+        <span class="link-index">02</span>
+      </a>
+      <a href="portfolio.html" class="mobile-menu-link">
+        <span>Portfolio</span>
+        <span class="link-index">03</span>
+      </a>
+      <a href="about.html" class="mobile-menu-link">
+        <span>About</span>
+        <span class="link-index">04</span>
+      </a>
+      <a href="insights.html" class="mobile-menu-link">
+        <span>Insights</span>
+        <span class="link-index">05</span>
+      </a>
+      <a href="careers.html" class="mobile-menu-link">
+        <span>Careers</span>
+        <span class="link-index">06</span>
+      </a>
+      <a href="contact.html" class="mobile-menu-link">
+        <span>Contact</span>
+        <span class="link-index">07</span>
+      </a>
+      <button class="mobile-menu-link cmd-palette-trigger" type="button" style="background:transparent; border:none; text-align:left; width:100%; cursor:pointer;">
+        <span>Quick Jump</span>
+        <span class="link-index" style="color:var(--sky-400); font-weight:700;">⌘K</span>
+      </button>
+    </div>
+
+    <div class="mobile-menu-footer">
+      <a href="contact.html" class="btn btn-primary btn-block">Schedule Technical Discovery</a>
+      <div class="mobile-menu-meta">
+        <span>15-MINUTE SLA</span>
+        <span class="mono-num">6 CORE PRACTICES</span>
+      </div>
+    </div>
+  </div>
+
+  <main id="main-content">
+
+    <!-- Services Header -->
+    <section class="section" aria-labelledby="services-hero-heading">
+      <div class="container">
+        <div style="max-width: 860px; margin-bottom: 3.5rem;">
+          <div class="kicker">01 // Architectural Disciplines</div>
+          <h1 id="services-hero-heading" style="margin-bottom: 1.25rem;">
+            Resilient capabilities from kernel algorithms to cloud boundaries.
+          </h1>
+          <p style="font-size: 1.1875rem; color: var(--white-75); line-height: 1.6;">
+            We do not offer generic IT support or cosmetic redesigns. We deploy specialized senior squads to engineer high-throughput data pipelines, secure cloud boundaries, and stabilize mission-critical applications.
+          </p>
+        </div>
+
+        <!-- 3 Delivery Models (Mobile Stacked Cards / Desktop Grid) -->
+        <div class="section-header">
+          <div class="kicker">02 // Engagement Models</div>
+          <h2>Three transparent ways to engage our senior practice.</h2>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr; gap: 1.5rem; margin-bottom: 4rem;" class="grid-3-tablet">
+          
+          <!-- Model 1 -->
+          <div class="spotlight-card" style="background: var(--navy-900); border: 1px solid var(--hairline-bright); border-top: 3px solid var(--sky-400); padding: 1.5rem; border-radius: var(--radius-xs); display: flex; flex-direction: column; justify-content: space-between;">
+            <div>
+              <div class="kicker" style="font-size: 0.6875rem;">MODEL 01 // SQUAD ENGAGEMENT</div>
+              <h3 style="font-size: 1.25rem; margin-bottom: 0.5rem;">Dedicated Architecture Squad</h3>
+              <p style="font-size: 0.875rem; color: var(--white-75); margin-bottom: 1.25rem;">
+                A full-stack senior squad (Principal Architect, 2 Systems Engineers, 1 SRE) embedded into your organization for major migrations or new greenfield builds.
+              </p>
+              <ul style="font-size: 0.8125rem; color: var(--sky-300); list-style: none; display: flex; flex-direction: column; gap: 0.5rem; margin-bottom: 1.5rem;">
+                <li>+ Dedicated weekly synthetic load drills</li>
+                <li>+ Direct Slack &amp; GitHub PR integration</li>
+                <li>+ Guaranteed sprint deliverable roadmap</li>
+              </ul>
+            </div>
+            <a href="contact.html" class="btn btn-secondary btn-sm btn-block">Inquire Squad Availability</a>
+          </div>
+
+          <!-- Model 2 -->
+          <div class="spotlight-card border-beam" style="background: var(--navy-900); border: 1px solid var(--hairline); border-top: 3px solid var(--sky-400); padding: 1.5rem; border-radius: var(--radius-xs); display: flex; flex-direction: column; justify-content: space-between;">
+            <div>
+              <div class="kicker" style="font-size: 0.6875rem;">MODEL 02 // SRE OPERATIONS</div>
+              <h3 style="font-size: 1.25rem; margin-bottom: 0.5rem;">Production SRE Retainer</h3>
+              <p style="font-size: 0.875rem; color: var(--white-75); margin-bottom: 1.25rem;">
+                Continuous 24/7 tier-3 SRE rotation with contractually guaranteed 15-minute response times for critical P0/P1 production alerts.
+              </p>
+              <ul style="font-size: 0.8125rem; color: var(--sky-300); list-style: none; display: flex; flex-direction: column; gap: 0.5rem; margin-bottom: 1.5rem;">
+                <li>+ 15-minute incident escalation SLA</li>
+                <li>+ OpenTelemetry &amp; Grafana dashboards</li>
+                <li>+ Monthly chaos testing and failover drills</li>
+              </ul>
+            </div>
+            <a href="contact.html" class="btn btn-secondary btn-sm btn-block">Review SLA Retainer</a>
+          </div>
+
+          <!-- Model 3 -->
+          <div class="spotlight-card" style="background: var(--navy-900); border: 1px solid var(--hairline); border-top: 3px solid var(--sky-400); padding: 1.5rem; border-radius: var(--radius-xs); display: flex; flex-direction: column; justify-content: space-between;">
+            <div>
+              <div class="kicker" style="font-size: 0.6875rem;">MODEL 03 // DIAGNOSTIC AUDIT</div>
+              <h3 style="font-size: 1.25rem; margin-bottom: 0.5rem;">Targeted Architecture Audit</h3>
+              <p style="font-size: 0.875rem; color: var(--white-75); margin-bottom: 1.25rem;">
+                A rigorous 3-week diagnostic deep dive covering Kubernetes reliability, cloud spend waste, security posture, and database query bottlenecks.
+              </p>
+              <ul style="font-size: 0.8125rem; color: var(--sky-300); list-style: none; display: flex; flex-direction: column; gap: 0.5rem; margin-bottom: 1.5rem;">
+                <li>+ Complete topology risk report</li>
+                <li>+ Documented cloud expenditure savings</li>
+                <li>+ Concrete 90-day remediation roadmap</li>
+              </ul>
+            </div>
+            <a href="contact.html" class="btn btn-secondary btn-sm btn-block">Schedule 3-Week Audit</a>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 6 Detailed Capability Blocks -->
+    <section class="section section-border-top" aria-labelledby="practices-heading">
+      <div class="container">
+        <div class="section-header">
+          <div class="kicker">03 // Deep Capability Specifications</div>
+          <h2 id="practices-heading">Comprehensive breakdown of our core technical disciplines.</h2>
+        </div>
+
+        <div style="display: flex; flex-direction: column; gap: 2rem;">
+          
+          <!-- Practice 1 -->
+          <article class="spotlight-card border-beam" style="background: var(--navy-900); border: 1px solid var(--hairline); padding: clamp(1.5rem, 4vw, 2.5rem); border-radius: var(--radius-xs);">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 0.75rem;">
+              <span class="kicker" style="margin-bottom: 0;">PRACTICE 01 // CLOUD &amp; DEVOPS</span>
+              <span style="font-family: var(--font-mono); font-size: 0.6875rem; color: var(--sky-400); background: var(--navy-850); padding: 2px 8px; border: 1px solid var(--hairline); border-radius: var(--radius-pill);">MULTI-ZONE EKS / GKE</span>
+            </div>
+            <h3 style="font-size: 1.5rem; margin-bottom: 0.75rem;">Cloud Infrastructure &amp; Kubernetes Orchestration</h3>
+            <p style="font-size: 1rem; color: var(--white-75); line-height: 1.6; max-width: 75ch; margin-bottom: 1.5rem;">
+              We eliminate configuration drift and manual deployments through automated, declarative Terraform and GitOps topologies. We architect <span class="arch-term" data-definition="Declarative node autoscaler that provisions EKS capacity in sub-45s.">Karpenter</span>-driven autoscaling compute clusters that scale pods based on live traffic demand and aggressively reduce idle compute expenditures.
+            </p>
+            <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
+              <span style="font-family: var(--font-mono); font-size: 0.6875rem; padding: 4px 10px; background: var(--navy-800); border: 1px solid var(--hairline); border-radius: 2px; color: var(--sky-300);">AWS EKS</span>
+              <span style="font-family: var(--font-mono); font-size: 0.6875rem; padding: 4px 10px; background: var(--navy-800); border: 1px solid var(--hairline); border-radius: 2px; color: var(--sky-300);">Google GKE</span>
+              <span style="font-family: var(--font-mono); font-size: 0.6875rem; padding: 4px 10px; background: var(--navy-800); border: 1px solid var(--hairline); border-radius: 2px; color: var(--sky-300);">Terraform</span>
+              <span style="font-family: var(--font-mono); font-size: 0.6875rem; padding: 4px 10px; background: var(--navy-800); border: 1px solid var(--hairline); border-radius: 2px; color: var(--sky-300);">Karpenter</span>
+              <span style="font-family: var(--font-mono); font-size: 0.6875rem; padding: 4px 10px; background: var(--navy-800); border: 1px solid var(--hairline); border-radius: 2px; color: var(--sky-300);">ArgoCD</span>
+            </div>
+          </article>
+
+          <!-- Practice 2 -->
+          <article class="spotlight-card" style="background: var(--navy-900); border: 1px solid var(--hairline); padding: clamp(1.5rem, 4vw, 2.5rem); border-radius: var(--radius-xs);">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 0.75rem;">
+              <span class="kicker" style="margin-bottom: 0;">PRACTICE 02 // STREAM PROCESSING</span>
+              <span style="font-family: var(--font-mono); font-size: 0.6875rem; color: var(--sky-400); background: var(--navy-850); padding: 2px 8px; border: 1px solid var(--hairline); border-radius: var(--radius-pill);">MILLIONS OF EVENTS/SEC</span>
+            </div>
+            <h3 style="font-size: 1.5rem; margin-bottom: 0.75rem;">High-Throughput Stream Ingestion &amp; Analytics</h3>
+            <p style="font-size: 1rem; color: var(--white-75); line-height: 1.6; max-width: 75ch; margin-bottom: 1.5rem;">
+              When database connections saturate and telemetry stalls, we deploy distributed streaming pipelines built on Apache Kafka, Redpanda, and <span class="arch-term" data-definition="Stateful stream processing engine capable of exactly-once event windowing under massive burst loads.">Apache Flink</span>. We transform erratic IoT or transaction bursts into partitioned, replayable log streams with sub-second analytical dispatch.
+            </p>
+            <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
+              <span style="font-family: var(--font-mono); font-size: 0.6875rem; padding: 4px 10px; background: var(--navy-800); border: 1px solid var(--hairline); border-radius: 2px; color: var(--sky-300);">Apache Kafka</span>
+              <span style="font-family: var(--font-mono); font-size: 0.6875rem; padding: 4px 10px; background: var(--navy-800); border: 1px solid var(--hairline); border-radius: 2px; color: var(--sky-300);"><span class="arch-term" data-definition="Stateful stream processing engine capable of exactly-once event windowing under massive burst loads.">Apache Flink</span></span>
+              <span style="font-family: var(--font-mono); font-size: 0.6875rem; padding: 4px 10px; background: var(--navy-800); border: 1px solid var(--hairline); border-radius: 2px; color: var(--sky-300);"><span class="arch-term" data-definition="Fast open-source columnar database management system for real-time analytical reporting.">ClickHouse</span></span>
+              <span style="font-family: var(--font-mono); font-size: 0.6875rem; padding: 4px 10px; background: var(--navy-800); border: 1px solid var(--hairline); border-radius: 2px; color: var(--sky-300);">Redpanda</span>
+            </div>
+          </article>
+
+          <!-- Practice 3 -->
+          <article class="spotlight-card" style="background: var(--navy-900); border: 1px solid var(--hairline); padding: clamp(1.5rem, 4vw, 2.5rem); border-radius: var(--radius-xs);">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 0.75rem;">
+              <span class="kicker" style="margin-bottom: 0;">PRACTICE 03 // SECURITY &amp; COMPLIANCE</span>
+              <span style="font-family: var(--font-mono); font-size: 0.6875rem; color: var(--sky-400); background: var(--navy-850); padding: 2px 8px; border: 1px solid var(--hairline); border-radius: var(--radius-pill);">SOC 2 &amp; HIPAA VERIFIED</span>
+            </div>
+            <h3 style="font-size: 1.5rem; margin-bottom: 0.75rem;">Zero-Trust Architecture &amp; Cryptographic DevSecOps</h3>
+            <p style="font-size: 1rem; color: var(--white-75); line-height: 1.6; max-width: 75ch; margin-bottom: 1.5rem;">
+              We implement identity-aware service meshes with <span class="arch-term" data-definition="Mutual TLS 1.3 cryptographic identity verification ensuring zero unauthenticated plaintext transit.">mutual TLS (mTLS)</span>, hardware security module (HSM) key isolation, and immutable audit trails by default. Past 34 client engagements passed SOC 2 Type II, ISO 27001, and HIPAA compliance audits with zero remediation exceptions.
+            </p>
+            <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
+              <span style="font-family: var(--font-mono); font-size: 0.6875rem; padding: 4px 10px; background: var(--navy-800); border: 1px solid var(--hairline); border-radius: 2px; color: var(--sky-300);">mTLS / Istio</span>
+              <span style="font-family: var(--font-mono); font-size: 0.6875rem; padding: 4px 10px; background: var(--navy-800); border: 1px solid var(--hairline); border-radius: 2px; color: var(--sky-300);">HashiCorp Vault</span>
+              <span style="font-family: var(--font-mono); font-size: 0.6875rem; padding: 4px 10px; background: var(--navy-800); border: 1px solid var(--hairline); border-radius: 2px; color: var(--sky-300);">AWS KMS</span>
+              <span style="font-family: var(--font-mono); font-size: 0.6875rem; padding: 4px 10px; background: var(--navy-800); border: 1px solid var(--hairline); border-radius: 2px; color: var(--sky-300);">Trivy / Cosign</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Accordions -->
+    <section class="section section-border-top" aria-labelledby="faq-heading">
+      <div class="container" style="max-width: 860px;">
+        <div class="section-header">
+          <div class="kicker">04 // Operational FAQ</div>
+          <h2 id="faq-heading">Frequently asked technical questions.</h2>
+        </div>
+
+        <div class="accordion-group">
+          
+          <details class="accordion-item" open>
+            <summary class="accordion-summary">
+              <span>How quickly can a NovaTech squad mobilize for an emergency?</span>
+              <svg class="accordion-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </summary>
+            <div class="accordion-content">
+              For retained clients, our senior SRE rotation responds contractually within 15 minutes for critical P0/P1 incidents. For new client engagements, our architecture squad can complete initial intake and begin hands-on topology review within five business days.
+            </div>
+          </details>
+
+          <details class="accordion-item">
+            <summary class="accordion-summary">
+              <span>Do you work alongside our existing in-house engineering team?</span>
+              <svg class="accordion-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </summary>
+            <div class="accordion-content">
+              Yes. We integrate directly into your existing Slack, Jira/Linear, and GitHub environments. We pair program on complex consensus problems, conduct rigorous PR reviews, and build automated runbooks so your team can maintain all infrastructure independently.
+            </div>
+          </details>
+
+          <details class="accordion-item">
+            <summary class="accordion-summary">
+              <span>Who owns the intellectual property and code produced?</span>
+              <svg class="accordion-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </summary>
+            <div class="accordion-content">
+              You own 100% of all code, configuration files, Terraform manifests, and documentation from day one. We use open industry standards and build zero proprietary dependencies that lock you into our agency.
+            </div>
+          </details>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <aside class="mobile-bottom-bar" aria-label="Quick Consultation Launcher">
+    <div class="bottom-bar-inner">
+      <div class="bottom-bar-info">
+        <span class="bottom-bar-label">Direct Engineering Access</span>
+        <span class="bottom-bar-metric mono-num">6 DISCIPLINES</span>
+      </div>
+      <a href="contact.html" class="btn btn-primary btn-sm">Schedule Discovery</a>
+    </div>
+  </aside>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" class="brand" style="margin-bottom: 1rem;">
+            <svg class="brand-mark" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+              <rect width="32" height="32" rx="4" fill="#0A1F44" stroke="#8FD3FF" stroke-opacity="0.32" stroke-width="1.5"/>
+              <path d="M9 23V9L23 23V9" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="square" stroke-linejoin="miter"/>
+              <circle cx="23" cy="9" r="2.5" fill="#8FD3FF"/>
+            </svg>
+            <div class="brand-type">
+              <span class="brand-name">NovaTech</span>
+              <span class="brand-sub">SOLUTIONS</span>
+            </div>
+          </a>
+          <p style="font-size: 0.875rem; color: var(--white-75); line-height: 1.6;">
+            Engineering resilient custom software, high-throughput streaming pipelines, and audited Kubernetes cloud infrastructure for organizations where downtime is not an option.
+          </p>
+        </div>
+        <div>
+          <div class="footer-col-title">Capabilities</div>
+          <ul class="footer-links-list">
+            <li><a href="services.html" class="footer-link">Cloud &amp; DevOps</a></li>
+            <li><a href="services.html" class="footer-link">High-Throughput Streaming</a></li>
+            <li><a href="services.html" class="footer-link">Cybersecurity &amp; mTLS</a></li>
+            <li><a href="services.html" class="footer-link">Distributed Software</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-col-title">Practice</div>
+          <ul class="footer-links-list">
+            <li><a href="about.html" class="footer-link">Engineering Charter</a></li>
+            <li><a href="portfolio.html" class="footer-link">Case Studies</a></li>
+            <li><a href="insights.html" class="footer-link">Technical Insights</a></li>
+            <li><a href="careers.html" class="footer-link">Careers (5 Openings)</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-col-title">Direct Contact</div>
+          <ul class="footer-links-list">
+            <li><a href="contact.html" class="footer-link">Discovery Intake Form</a></li>
+            <li><span style="font-family: var(--font-mono); font-size: 0.8125rem; color: var(--sky-300);">inquiry@novatech-solutions.io</span></li>
+            <li><span style="font-size: 0.75rem; color: var(--white-40); margin-top: 0.5rem; display: block;">100 Congress Avenue, Suite 2100<br>Austin, Texas 78701</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-legal-bar">
+        <span>&copy; 2026 NovaTech Solutions Inc. All rights reserved. 100% Client IP Ownership.</span>
+        <div style="display: flex; gap: 1.5rem;">
+          <a href="privacy.html" class="footer-link" style="font-size: 0.75rem;">Privacy Policy</a>
+          <a href="terms.html" class="footer-link" style="font-size: 0.75rem;">Terms of Architecture</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

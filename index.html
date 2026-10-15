@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#030B1A">
+  <title>NovaTech Solutions — Enterprise IT &amp; Digital Engineering</title>
+  <meta name="description" content="NovaTech Solutions engineers resilient custom software, high-throughput streaming data pipelines, and audited Kubernetes cloud infrastructure for mission-critical operations.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+
+  <!-- Preconnect Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Core Mobile-First Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Accessible Skip Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Compact Engineered Header (58px) -->
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      
+      <!-- Brand Logo (Modern Technology Redraw) -->
+      <a href="index.html" class="brand" aria-label="NovaTech Solutions Home">
+        <svg class="brand-mark" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+          <rect width="32" height="32" rx="4" fill="#0A1F44" stroke="#8FD3FF" stroke-opacity="0.32" stroke-width="1.5"/>
+          <path d="M9 23V9L23 23V9" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="square" stroke-linejoin="miter"/>
+          <circle cx="23" cy="9" r="2.5" fill="#8FD3FF"/>
+        </svg>
+        <div class="brand-type">
+          <span class="brand-name">NovaTech</span>
+          <span class="brand-sub">SOLUTIONS</span>
+        </div>
+      </a>
+
+      <!-- Telemetry Status Pill (Header Live Telemetry) -->
+      <div class="telemetry-status" aria-label="Live System Telemetry">
+        <span class="telemetry-pulse" aria-hidden="true"></span>
+        <span>US-EAST NOMINAL // 99.999%</span>
+      </div>
+
+      <!-- Desktop Nav (Hidden below 1024px) -->
+      <nav class="nav-desktop" aria-label="Primary Navigation">
+        <a href="index.html" class="active">Home</a>
+        <a href="services.html">Services</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="about.html">About</a>
+        <a href="insights.html">Insights</a>
+        <a href="careers.html">Careers</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <!-- Header Actions -->
+      <div class="header-actions">
+        <button class="cmd-palette-trigger" type="button" aria-label="Open Command Search (⌘K)">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+            <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+          </svg>
+          <span class="cmd-key-badge">⌘K</span>
+        </button>
+
+        <a href="contact.html" class="btn btn-primary btn-sm header-cta-desktop">
+          Book Consultation
+        </a>
+
+        <!-- Mobile Menu Toggle Button (48x48px Touch Target) -->
+        <button class="menu-toggle" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open navigation menu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" aria-hidden="true">
+            <line x1="3" y1="6" x2="21" y2="6"/>
+            <line x1="3" y1="12" x2="21" y2="12"/>
+            <line x1="3" y1="18" x2="21" y2="18"/>
+          </svg>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Full-Screen Mobile Command Center Navigation -->
+  <div id="mobile-menu" class="mobile-menu-overlay" aria-hidden="true">
+    <div class="mobile-menu-links">
+      <a href="index.html" class="mobile-menu-link active">
+        <span>Home</span>
+        <span class="link-index">01</span>
+      </a>
+      <a href="services.html" class="mobile-menu-link">
+        <span>Services</span>
+        <span class="link-index">02</span>
+      </a>
+      <a href="portfolio.html" class="mobile-menu-link">
+        <span>Portfolio</span>
+        <span class="link-index">03</span>
+      </a>
+      <a href="about.html" class="mobile-menu-link">
+        <span>About</span>
+        <span class="link-index">04</span>
+      </a>
+      <a href="insights.html" class="mobile-menu-link">
+        <span>Insights</span>
+        <span class="link-index">05</span>
+      </a>
+      <a href="careers.html" class="mobile-menu-link">
+        <span>Careers</span>
+        <span class="link-index">06</span>
+      </a>
+      <a href="contact.html" class="mobile-menu-link">
+        <span>Contact</span>
+        <span class="link-index">07</span>
+      </a>
+      <button class="mobile-menu-link cmd-palette-trigger" type="button" style="background:transparent; border:none; text-align:left; width:100%; cursor:pointer;">
+        <span>Quick Jump</span>
+        <span class="link-index" style="color:var(--sky-400); font-weight:700;">⌘K</span>
+      </button>
+    </div>
+
+    <div class="mobile-menu-footer">
+      <a href="contact.html" class="btn btn-primary btn-block">
+        Schedule Technical Discovery
+      </a>
+      <div class="mobile-menu-meta">
+        <span>GLOBAL ROTATION // SRE ACTIVE</span>
+        <span class="mono-num">15M RESPONSE SLA</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Content Landmark -->
+  <main id="main-content">
+
+    <!-- 01. Hero Section (Engineered for 390px Mobile Canvas) -->
+    <section class="hero" aria-labelledby="hero-title">
+      <canvas id="hero-mesh-canvas" class="hero-mesh-canvas" aria-hidden="true"></canvas>
+      <div class="container hero-grid">
+        
+        <!-- Hero Text Block -->
+        <div class="hero-content">
+          <div class="kicker">01 // Enterprise Digital Engineering</div>
+          <h1 id="hero-title" class="hero-title">
+            <span class="text-gradient">Distributed systems engineered to withstand</span> <span class="accent-text">real production chaos.</span>
+          </h1>
+          <p class="hero-lead">
+            We architect resilient custom software, high-throughput streaming pipelines, and audited Kubernetes cloud infrastructure for organizations where downtime is not an option.
+          </p>
+
+          <div class="hero-actions">
+            <a href="contact.html" class="btn btn-primary">
+              Schedule Technical Discovery &rarr;
+            </a>
+            <a href="portfolio.html" class="btn btn-secondary">
+              Inspect Case Studies
+            </a>
+          </div>
+
+          <!-- Hero Key Proof Points -->
+          <div class="hero-proofs">
+            <div class="hero-proof-item">
+              <span class="proof-val mono-num">12 YRS</span>
+              <span class="proof-label">Enterprise Track Record</span>
+            </div>
+            <div class="hero-proof-item">
+              <span class="proof-val mono-num">250+</span>
+              <span class="proof-label">Production Topologies</span>
+            </div>
+            <div class="hero-proof-item">
+              <span class="proof-val mono-num">99.999%</span>
+              <span class="proof-label">Audited Client Uptime</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Right: Interactive Touch Telemetry Console -->
+        <div class="telemetry-console border-beam spotlight-card" aria-label="Interactive Telemetry Simulator">
+          <div class="console-topbar">
+            <div class="console-title">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#8FD3FF" stroke-width="2" aria-hidden="true">
+                <circle cx="12" cy="12" r="9"/>
+                <polyline points="12 6 12 12 16 14"/>
+              </svg>
+              <span>TELEMETRY SIMULATOR</span>
+            </div>
+            <div class="console-mode-toggle" role="group" aria-label="Select simulation load profile">
+              <button class="mode-btn is-active" data-mode="nominal" type="button">Nominal</button>
+              <button class="mode-btn" data-mode="spike" type="button">10x Spike</button>
+              <button class="mode-btn" data-mode="failover" type="button">Failover</button>
+            </div>
+          </div>
+
+          <!-- Real-Time Waveform Visualization (SVG + Radar Sweep) -->
+          <div class="waveform-container">
+            <div class="radar-sweep" aria-hidden="true"></div>
+            <svg class="waveform-svg" viewBox="0 0 500 100" preserveAspectRatio="none" aria-hidden="true">
+              <defs>
+                <linearGradient id="sky-fade-gradient" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0%" stop-color="#8FD3FF" stop-opacity="0.3"/>
+                  <stop offset="100%" stop-color="#8FD3FF" stop-opacity="0"/>
+                </linearGradient>
+              </defs>
+              <path class="waveform-path" d="M 0 60 Q 50 45, 100 60 T 200 60 T 300 60 T 400 60 T 500 60"/>
+            </svg>
+          </div>
+
+          <!-- 3 Live Telemetry Cards -->
+          <div class="console-metrics-grid">
+            <div class="telemetry-card">
+              <div class="telemetry-card-label">P99 Latency</div>
+              <div class="telemetry-card-val" data-metric="p99">14ms</div>
+            </div>
+            <div class="telemetry-card">
+              <div class="telemetry-card-label">Throughput</div>
+              <div class="telemetry-card-val" data-metric="throughput">85k/s</div>
+            </div>
+            <div class="telemetry-card">
+              <div class="telemetry-card-label">Packet Loss</div>
+              <div class="telemetry-card-val" data-metric="errors">0.000%</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 02. Audited Client Credentials Swipe Band -->
+    <section class="credentials-band" aria-label="Audited Client Telemetry">
+      <div class="container">
+        <div class="credentials-header">Audited Production Topologies // Active Engagements</div>
+        <div class="credentials-row">
+          <div class="credential-chip">
+            <span class="credential-name">Vanguard Logistics</span>
+            <span class="credential-metric">1.4M events/sec</span>
+          </div>
+          <div class="credential-chip">
+            <span class="credential-name">Apex Financial Core</span>
+            <span class="credential-metric">99.999% SLA</span>
+          </div>
+          <div class="credential-chip">
+            <span class="credential-name">Strata Health</span>
+            <span class="credential-metric">14k concurrent</span>
+          </div>
+          <div class="credential-chip">
+            <span class="credential-name">Kestrel Dynamics</span>
+            <span class="credential-metric">SOC 2 Type II</span>
+          </div>
+          <div class="credential-chip">
+            <span class="credential-name">Beacon Grid Networks</span>
+            <span class="credential-metric">180ms P99</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 03. Featured Case Studies (Swipe-Snap Carousel on Mobile / Grid on Desktop) -->
+    <section class="section section-border-bottom" aria-labelledby="case-heading">
+      <div class="container carousel-wrapper">
+        <div class="section-header">
+          <div class="kicker">02 // Audited Outcomes</div>
+          <h2 id="case-heading">Systems shipped under stringent SLA constraints.</h2>
+          <p>
+            Every engagement delivers auditable infrastructure, verified load testing, and zero technical debt handoffs.
+          </p>
+        </div>
+
+        <div class="swipe-carousel-track">
+          
+          <!-- Case 1: Apex Financial Core -->
+          <article class="swipe-card spotlight-card border-beam">
+            <div>
+              <div class="blueprint-frame" data-slot-label="IMG / project-1" style="aspect-ratio: 16 / 10; margin-bottom: 1.25rem;">
+                <div class="corner-cross corner-tl"></div>
+                <div class="corner-cross corner-tr"></div>
+                <div class="corner-cross corner-bl"></div>
+                <div class="corner-cross corner-br"></div>
+                <img src="assets/images/project-1.jpg" alt="Apex Financial Core settlement ledger architecture" width="560" height="350" loading="lazy" decoding="async" onerror="this.style.display='none'">
+              </div>
+              <div class="kicker" style="font-size: 0.6875rem;">FinTech // Cloud Modernization</div>
+              <h3 style="margin-bottom: 0.5rem;">Core Settlement Ledger Cloud Migration</h3>
+              <p style="font-size: 0.9375rem; color: var(--white-75); margin-bottom: 1.25rem;">
+                Decomposed legacy relational monolithic database into event-sourced Go microservices deployed on multi-region AWS EKS with Karpenter autoscaling.
+              </p>
+            </div>
+            <div style="border-top: 1px dashed var(--hairline); padding-top: 1rem; display: flex; justify-content: space-between; align-items: center;">
+              <div>
+                <span class="mono-num" style="font-weight: 700; color: var(--sky-400); font-size: 0.9375rem;">38% COST CUT</span>
+                <span style="display: block; font-size: 0.6875rem; color: var(--sky-300);">P99 LATENCY: 42ms</span>
+              </div>
+              <button class="btn btn-secondary btn-sm" data-open-case-modal data-case-id="case-1" aria-label="Quick Spec for Apex Financial Core">
+                Quick Spec
+              </button>
+            </div>
+          </article>
+
+          <!-- Case 2: Vanguard Logistics -->
+          <article class="swipe-card spotlight-card">
+            <div>
+              <div class="blueprint-frame" data-slot-label="IMG / project-3" style="aspect-ratio: 16 / 10; margin-bottom: 1.25rem;">
+                <div class="corner-cross corner-tl"></div>
+                <div class="corner-cross corner-tr"></div>
+                <div class="corner-cross corner-bl"></div>
+                <div class="corner-cross corner-br"></div>
+                <img src="assets/images/project-3.jpg" alt="Vanguard Logistics real-time stream ingestion architecture" width="560" height="350" loading="lazy" decoding="async" onerror="this.style.display='none'">
+              </div>
+              <div class="kicker" style="font-size: 0.6875rem;">Logistics // Stream Processing</div>
+              <h3 style="margin-bottom: 0.5rem;">1.4M Events/Sec Telemetry Stream Rebuild</h3>
+              <p style="font-size: 0.9375rem; color: var(--white-75); margin-bottom: 1.25rem;">
+                Architected an Apache Kafka and ClickHouse ingestion pipeline handling 85,000 intermodal shipping containers with zero dropped transmissions.
+              </p>
+            </div>
+            <div style="border-top: 1px dashed var(--hairline); padding-top: 1rem; display: flex; justify-content: space-between; align-items: center;">
+              <div>
+                <span class="mono-num" style="font-weight: 700; color: var(--sky-400); font-size: 0.9375rem;">1.4M EVENTS/S</span>
+                <span style="display: block; font-size: 0.6875rem; color: var(--sky-300);">0% PACKET LOSS</span>
+              </div>
+              <a href="case-study.html" class="btn btn-secondary btn-sm">
+                Case Study &rarr;
+              </a>
+            </div>
+          </article>
+
+          <!-- Case 3: Strata Health -->
+          <article class="swipe-card spotlight-card">
+            <div>
+              <div class="blueprint-frame" data-slot-label="IMG / project-2" style="aspect-ratio: 16 / 10; margin-bottom: 1.25rem;">
+                <div class="corner-cross corner-tl"></div>
+                <div class="corner-cross corner-tr"></div>
+                <div class="corner-cross corner-bl"></div>
+                <div class="corner-cross corner-br"></div>
+                <img src="assets/images/project-2.jpg" alt="Strata Health HIPAA WebRTC media mesh" width="560" height="350" loading="lazy" decoding="async" onerror="this.style.display='none'">
+              </div>
+              <div class="kicker" style="font-size: 0.6875rem;">HealthTech // WebRTC Mesh</div>
+              <h3 style="margin-bottom: 0.5rem;">HIPAA-Compliant Real-Time Media Gateway</h3>
+              <p style="font-size: 0.9375rem; color: var(--white-75); margin-bottom: 1.25rem;">
+                Engineered encrypted audio/video streaming mesh sustaining 14,000 concurrent patient sessions with zero media frame drop and SOC 2 Type II audit pass.
+              </p>
+            </div>
+            <div style="border-top: 1px dashed var(--hairline); padding-top: 1rem; display: flex; justify-content: space-between; align-items: center;">
+              <div>
+                <span class="mono-num" style="font-weight: 700; color: var(--sky-400); font-size: 0.9375rem;">14K SESSIONS</span>
+                <span style="display: block; font-size: 0.6875rem; color: var(--sky-300);">P95 JITTER: 8ms</span>
+              </div>
+              <button class="btn btn-secondary btn-sm" data-open-case-modal data-case-id="case-2" aria-label="Quick Spec for Strata Health">
+                Quick Spec
+              </button>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Mobile Touch Carousel Indicators -->
+        <div class="carousel-indicators">
+          <span class="carousel-dot is-active"></span>
+          <span class="carousel-dot"></span>
+          <span class="carousel-dot"></span>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 04. Interactive ROI & Latency Calculator -->
+    <section id="roi-calculator" class="section section-border-bottom" aria-labelledby="calc-heading">
+      <div class="container">
+        <div class="section-header">
+          <div class="kicker">03 // Cost &amp; Latency Model</div>
+          <h2 id="calc-heading">Calculate your projected infrastructure efficiency gains.</h2>
+          <p>
+            Based on historical audit data across 34 enterprise cloud migrations, our topologies reduce monthly infrastructure expenditure by an average of 36% while decreasing P99 latency.
+          </p>
+        </div>
+
+        <div class="calculator-box spotlight-card border-beam">
+          <div class="slider-group">
+            <div class="slider-header">
+              <label for="spend-slider" class="slider-label">Current Monthly Cloud Spend</label>
+              <span id="spend-display" class="slider-display-val">$50,000 / mo</span>
+            </div>
+            <input type="range" id="spend-slider" class="calc-range-input" min="10000" max="250000" step="5000" value="50000" aria-label="Monthly Cloud Spend Slider">
+          </div>
+
+          <div class="calculator-results">
+            <div>
+              <span class="calc-res-label">Projected Annual Savings (36% Cut)</span>
+              <div id="savings-display" class="calc-res-val mono-num">$216,000 / yr</div>
+            </div>
+            <div>
+              <span class="calc-res-label">Target Multi-Region Latency</span>
+              <div id="latency-display" class="calc-res-val mono-num">28ms P99</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 05. Core Engineering Disciplines (Mobile-Dense Accordions) -->
+    <section class="section section-border-bottom" aria-labelledby="services-heading">
+      <div class="container">
+        <div class="section-header">
+          <div class="kicker">04 // Practice Capabilities</div>
+          <h2 id="services-heading">Six disciplines engineered for operational excellence.</h2>
+          <p>
+            We deploy specialized senior teams to solve complex architectural challenges. Every engagement produces auditable infrastructure, complete documentation, and zero technical debt handoffs.
+          </p>
+        </div>
+
+        <div class="accordion-group">
+          
+          <details class="accordion-item" open>
+            <summary class="accordion-summary">
+              <span>01 / Cloud Architecture &amp; Kubernetes (EKS / GKE)</span>
+              <svg class="accordion-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </summary>
+            <div class="accordion-content">
+              Multi-region cloud foundations built with declarative Terraform and automated GitOps pipelines. We implement <span class="arch-term" data-definition="Declarative node autoscaler that provisions EKS capacity in sub-45s based on exact pod resource requests.">Karpenter</span> autoscaling, zero-drift infrastructure, and cost-optimized compute instance reservation plans that curb monthly cloud waste.
+            </div>
+          </details>
+
+          <details class="accordion-item">
+            <summary class="accordion-summary">
+              <span>02 / High-Throughput Stream Ingestion (Kafka / Flink)</span>
+              <svg class="accordion-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </summary>
+            <div class="accordion-content">
+              Distributed streaming architectures capable of ingesting millions of sensor transmissions and transaction events per second. Integrated with <span class="arch-term" data-definition="Stateful stream processing engine capable of exactly-once event windowing under massive burst loads.">Apache Flink</span> for real-time sliding-window analytics and <span class="arch-term" data-definition="Columnar database engine executing analytical aggregations over billions of events in milliseconds.">ClickHouse</span> for columnar query execution.
+            </div>
+          </details>
+
+          <details class="accordion-item">
+            <summary class="accordion-summary">
+              <span>03 / Zero-Trust Security &amp; DevSecOps (mTLS / HSM)</span>
+              <svg class="accordion-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </summary>
+            <div class="accordion-content">
+              Cryptographically verified service meshes with <span class="arch-term" data-definition="Mutual TLS 1.3 cryptographic identity verification ensuring zero unauthenticated plaintext transit.">mTLS 1.3</span>, automated least-privilege IAM policies, and hardware security module integration. Our topologies have successfully cleared 34 consecutive SOC 2 Type II, ISO 27001, and HIPAA audits.
+            </div>
+          </details>
+
+          <details class="accordion-item">
+            <summary class="accordion-summary">
+              <span>04 / Distributed Systems Engineering (Go / Rust / gRPC)</span>
+              <svg class="accordion-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </summary>
+            <div class="accordion-content">
+              High-concurrency backend services written in Go and Rust for memory safety, low CPU overhead, and predictable sub-millisecond execution. Built on <span class="arch-term" data-definition="Binary serialization schema enforcing strict interface contracts and low-latency RPC transit.">Protobuf / gRPC</span> protocols to eliminate runtime regressions.
+            </div>
+          </details>
+
+          <details class="accordion-item">
+            <summary class="accordion-summary">
+              <span>05 / 24/7 Site Reliability Engineering (15-Min Response)</span>
+              <svg class="accordion-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </summary>
+            <div class="accordion-content">
+              Retained senior SRE squads delivering full-stack observability with <span class="arch-term" data-definition="Vendor-neutral telemetry standard capturing distributed traces, metrics, and logs with in-kernel eBPF instrumentation.">OpenTelemetry &amp; eBPF</span>. Backed by a strict 15-minute response SLA on P0/P1 alerts, with direct escalation lines to named principal engineers.
+            </div>
+          </details>
+
+          <details class="accordion-item">
+            <summary class="accordion-summary">
+              <span>06 / Database &amp; Ledger Modernization</span>
+              <svg class="accordion-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </summary>
+            <div class="accordion-content">
+              Zero-downtime database migrations, read-replica scaling, and decomposition of legacy SQL monoliths into distributed event stores. Automated dual-write validation harnesses ensure complete transactional integrity during cutovers.
+            </div>
+          </details>
+
+        </div>
+
+        <!-- Production Architecture Explorer (Interactive Code Console) -->
+        <div class="arch-console border-beam spotlight-card" aria-label="Production Architecture Code Inspector">
+          <div class="arch-console-topbar">
+            <div class="arch-tabs" role="tablist" aria-label="Production Topology Code">
+              <button class="arch-tab-btn is-active" role="tab" aria-selected="true" data-tab-target="#tab-terraform">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                <span>karpenter-autoscaler.tf</span>
+              </button>
+              <button class="arch-tab-btn" role="tab" aria-selected="false" data-tab-target="#tab-pipeline">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                <span>stream_ingest.go</span>
+              </button>
+              <button class="arch-tab-btn" role="tab" aria-selected="false" data-tab-target="#tab-security">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                <span>zero-trust-mesh.yaml</span>
+              </button>
+            </div>
+            <div class="arch-console-meta">
+              <span>STATUS: PRODUCTION COMPILED</span>
+              <button class="copy-badge-pill" data-copy-text="# Karpenter EKS Autoscaler&#10;resource &quot;karpenter_node_pool&quot; &quot;production_workloads&quot; { ... }">Copy</button>
+            </div>
+          </div>
+
+          <!-- Code Panel 1: Karpenter Terraform -->
+          <div id="tab-terraform" class="arch-code-panel is-active" role="tabpanel">
+<pre><code><span class="token-cmt"># Declarative Multi-Region Kubernetes Compute Scaling</span>
+<span class="token-kw">resource</span> <span class="token-str">"karpenter_node_pool"</span> <span class="token-str">"production_workloads"</span> {
+  <span class="token-fn">metadata</span> = { name = <span class="token-str">"critical-settlement-nodes"</span> }
+  <span class="token-fn">spec</span> = {
+    <span class="token-fn">template</span> = {
+      <span class="token-fn">spec</span> = {
+        <span class="token-fn">requirements</span> = [
+          { key = <span class="token-str">"karpenter.sh/capacity-type"</span>, operator = <span class="token-str">"In"</span>, values = [<span class="token-str">"spot"</span>, <span class="token-str">"on-demand"</span>] },
+          { key = <span class="token-str">"kubernetes.io/arch"</span>, operator = <span class="token-str">"In"</span>, values = [<span class="token-str">"arm64"</span>] } <span class="token-cmt"># AWS Graviton3 40% cost reduction</span>
+        ]
+        <span class="token-fn">node_class_ref</span> = { name = <span class="token-str">"al2023-ebpf-optimized"</span> }
+        <span class="token-fn">expire_after</span>   = <span class="token-str">"720h"</span> <span class="token-cmt"># Automatic node rotation for zero drift</span>
+      }
+    }
+    <span class="token-fn">disruption</span> = {
+      <span class="token-fn">consolidation_policy</span> = <span class="token-str">"WhenEmptyOrUnderutilized"</span>
+      <span class="token-fn">consolidate_after</span>    = <span class="token-str">"30s"</span>
+    }
+  }
+}</code></pre>
+          </div>
+
+          <!-- Code Panel 2: Go Stream Ingestion -->
+          <div id="tab-pipeline" class="arch-code-panel" role="tabpanel">
+<pre><code><span class="token-cmt">// High-Throughput Event Ingestion Core (1.4M events/s sustained)</span>
+<span class="token-kw">package</span> ingestion
+
+<span class="token-kw">type</span> <span class="token-type">TelemetryIngester</span> <span class="token-kw">struct</span> {
+    partitionRing *ring.HashRing
+    walWriter     *wal.SegmentWriter
+    flushTicker   *time.Ticker
+}
+
+<span class="token-kw">func</span> (ing *<span class="token-type">TelemetryIngester</span>) <span class="token-fn">ProcessBatch</span>(ctx context.Context, batch []<span class="token-type">Payload</span>) <span class="token-type">error</span> {
+    <span class="token-kw">for</span> _, item := <span class="token-kw">range</span> batch {
+        <span class="token-kw">if</span> crc32.ChecksumIEEE(item.Raw) == item.CRC32 {
+            ing.walWriter.WriteAsync(item.Key, item.Raw)
+        }
+    }
+    <span class="token-kw">return</span> ing.walWriter.SyncThreshold(<span class="token-num">4096</span>) <span class="token-cmt">// Sub-12ms durable fsync</span>
+}</code></pre>
+          </div>
+
+          <!-- Code Panel 3: Zero Trust Mesh YAML -->
+          <div id="tab-security" class="arch-code-panel" role="tabpanel">
+<pre><code><span class="token-cmt"># Cryptographically Enforced Mutual TLS 1.3 Service Mesh</span>
+<span class="token-kw">apiVersion</span>: security.istio.io/v1beta1
+<span class="token-kw">kind</span>: <span class="token-type">PeerAuthentication</span>
+<span class="token-fn">metadata</span>:
+  <span class="token-fn">name</span>: <span class="token-str">"strict-workload-mtls"</span>
+  <span class="token-fn">namespace</span>: <span class="token-str">"production"</span>
+<span class="token-fn">spec</span>:
+  <span class="token-fn">mtls</span>:
+    <span class="token-fn">mode</span>: <span class="token-str">STRICT</span> <span class="token-cmt"># Zero plaintext inter-service transit</span>
+---
+<span class="token-kw">apiVersion</span>: security.istio.io/v1beta1
+<span class="token-kw">kind</span>: <span class="token-type">AuthorizationPolicy</span>
+<span class="token-fn">metadata</span>:
+  <span class="token-fn">name</span>: <span class="token-str">"settlement-least-privilege"</span>
+<span class="token-fn">spec</span>:
+  <span class="token-fn">selector</span>:
+    <span class="token-fn">matchLabels</span>:
+      <span class="token-fn">app</span>: <span class="token-str">"core-settlement-engine"</span>
+  <span class="token-fn">action</span>: <span class="token-str">ALLOW</span>
+  <span class="token-fn">rules</span>:
+  - <span class="token-fn">from</span>:
+    - <span class="token-fn">source</span>:
+        <span class="token-fn">principals</span>: [<span class="token-str">"cluster.local/ns/production/sa/auth-ingress"</span>]</code></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 06. Verified Client Testimonials (Mobile Swipe) -->
+    <section class="section section-border-bottom" aria-labelledby="testimonial-heading">
+      <div class="container carousel-wrapper">
+        <div class="section-header">
+          <div class="kicker">05 // Verified Testimonials</div>
+          <h2 id="testimonial-heading">Feedback from engineering leaders in production.</h2>
+        </div>
+
+        <div class="swipe-carousel-track">
+          
+          <article class="swipe-card">
+            <blockquote style="font-size: 1.0625rem; line-height: 1.6; color: var(--white); margin-bottom: 1.25rem;">
+              “Our container fleet telemetry was dropping 18% of sensor packets during peak logistics shifts. NovaTech replaced the broker layer with Kafka and Flink in eight weeks. We now sustain 1.4 million events per second with zero message loss.”
+            </blockquote>
+            <div style="border-top: 1px dashed var(--hairline); padding-top: 1rem;">
+              <strong style="color: var(--white); font-size: 0.9375rem; display: block;">Julian Moreno</strong>
+              <span style="font-size: 0.75rem; color: var(--sky-400); font-family: var(--font-mono);">Head of Infrastructure // Vanguard Logistics</span>
+            </div>
+          </article>
+
+          <article class="swipe-card">
+            <blockquote style="font-size: 1.0625rem; line-height: 1.6; color: var(--white); margin-bottom: 1.25rem;">
+              “NovaTech re-architected our settlement ledger into event-sourced Go microservices on AWS EKS without a single second of maintenance downtime. Our monthly cloud expenditure dropped 38% while our P99 latency fell from 340ms to 42ms.”
+            </blockquote>
+            <div style="border-top: 1px dashed var(--hairline); padding-top: 1rem;">
+              <strong style="color: var(--white); font-size: 0.9375rem; display: block;">Marcus Vance</strong>
+              <span style="font-size: 0.75rem; color: var(--sky-400); font-family: var(--font-mono);">Chief Technology Officer // Apex Financial Core</span>
+            </div>
+          </article>
+
+          <article class="swipe-card">
+            <blockquote style="font-size: 1.0625rem; line-height: 1.6; color: var(--white); margin-bottom: 1.25rem;">
+              “Passing our first SOC 2 Type II audit without a single exception was a requirement for our enterprise funding round. Elena and the NovaTech security squad implemented mTLS, KMS rotation, and immutable audit logs within six weeks.”
+            </blockquote>
+            <div style="border-top: 1px dashed var(--hairline); padding-top: 1rem;">
+              <strong style="color: var(--white); font-size: 0.9375rem; display: block;">Rachel Zimmerman</strong>
+              <span style="font-size: 0.75rem; color: var(--sky-400); font-family: var(--font-mono);">VP of Engineering // Strata Health Systems</span>
+            </div>
+          </article>
+
+        </div>
+
+        <div class="carousel-indicators">
+          <span class="carousel-dot is-active"></span>
+          <span class="carousel-dot"></span>
+          <span class="carousel-dot"></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 07. Closing CTA Band (Datacenter Backdrop with Strict Contrast) -->
+    <section class="section" style="background: linear-gradient(135deg, rgba(6, 20, 48, 0.94) 0%, rgba(10, 31, 68, 0.88) 100%), url('assets/images/datacenter.jpg') center/cover no-repeat; border-top: 1px solid var(--hairline);" aria-labelledby="cta-heading">
+      <div class="container">
+        <div style="max-width: 780px;">
+          <div class="kicker">Ready For Production Deployment</div>
+          <h2 id="cta-heading" style="margin-bottom: 1.25rem;">
+            Have a mission-critical system to architect or modernize?
+          </h2>
+          <p style="font-size: 1.125rem; color: var(--white-75); margin-bottom: 2rem;">
+            Schedule an initial 30-minute technical discovery session directly with a principal systems architect. We review your current bottlenecks, discuss architectural options, and deliver an estimated timeline within five business days.
+          </p>
+          <div style="display: flex; flex-wrap: wrap; gap: 1rem;">
+            <a href="contact.html" class="btn btn-primary">
+              Book a Free Consultation &rarr;
+            </a>
+            <a href="portfolio.html" class="btn btn-secondary">
+              Inspect Case Studies
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Sticky Mobile Bottom Action Bar (Thumb-Reachable with Safe Area Support) -->
+  <aside class="mobile-bottom-bar" aria-label="Quick Consultation Launcher">
+    <div class="bottom-bar-inner">
+      <div class="bottom-bar-info">
+        <span class="bottom-bar-label">Available Rotation</span>
+        <span class="bottom-bar-metric mono-num">15M INCIDENT SLA</span>
+      </div>
+      <a href="contact.html" class="btn btn-primary btn-sm">
+        Schedule Discovery
+      </a>
+    </div>
+  </aside>
+
+  <!-- Global Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        
+        <div>
+          <a href="index.html" class="brand" style="margin-bottom: 1rem;">
+            <svg class="brand-mark" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+              <rect width="32" height="32" rx="4" fill="#0A1F44" stroke="#8FD3FF" stroke-opacity="0.32" stroke-width="1.5"/>
+              <path d="M9 23V9L23 23V9" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="square" stroke-linejoin="miter"/>
+              <circle cx="23" cy="9" r="2.5" fill="#8FD3FF"/>
+            </svg>
+            <div class="brand-type">
+              <span class="brand-name">NovaTech</span>
+              <span class="brand-sub">SOLUTIONS</span>
+            </div>
+          </a>
+          <p style="font-size: 0.875rem; color: var(--white-75); line-height: 1.6;">
+            Engineering resilient custom software, high-throughput streaming pipelines, and audited Kubernetes cloud infrastructure for organizations where downtime is not an option.
+          </p>
+          <div style="font-family: var(--font-mono); font-size: 0.6875rem; color: var(--sky-400); margin-top: 1rem;">
+            COORDINATES // 30.2672° N, 97.7431° W (AUSTIN, TX)
+          </div>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Capabilities</div>
+          <ul class="footer-links-list">
+            <li><a href="services.html" class="footer-link">Cloud &amp; DevOps</a></li>
+            <li><a href="services.html" class="footer-link">High-Throughput Streaming</a></li>
+            <li><a href="services.html" class="footer-link">Cybersecurity &amp; mTLS</a></li>
+            <li><a href="services.html" class="footer-link">Distributed Software</a></li>
+            <li><a href="services.html" class="footer-link">24/7 SRE Operations</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Practice</div>
+          <ul class="footer-links-list">
+            <li><a href="about.html" class="footer-link">Engineering Charter</a></li>
+            <li><a href="portfolio.html" class="footer-link">Case Studies</a></li>
+            <li><a href="case-study.html" class="footer-link">Vanguard Deep Dive</a></li>
+            <li><a href="insights.html" class="footer-link">Technical Insights</a></li>
+            <li><a href="careers.html" class="footer-link">Careers (5 Openings)</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Direct Contact</div>
+          <ul class="footer-links-list">
+            <li><a href="contact.html" class="footer-link">Discovery Intake Form</a></li>
+            <li><span style="font-family: var(--font-mono); font-size: 0.8125rem; color: var(--sky-300);">inquiry@novatech-solutions.io</span></li>
+            <li><span style="font-family: var(--font-mono); font-size: 0.8125rem; color: var(--sky-300);">+1 (512) 894-2200</span></li>
+            <li><span style="font-size: 0.75rem; color: var(--white-40); margin-top: 0.5rem; display: block;">100 Congress Avenue, Suite 2100<br>Austin, Texas 78701</span></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-legal-bar">
+        <span>&copy; 2026 NovaTech Solutions Inc. All rights reserved. 100% Client IP Ownership.</span>
+        <div style="display: flex; gap: 1.5rem;">
+          <a href="privacy.html" class="footer-link" style="font-size: 0.75rem;">Privacy Policy</a>
+          <a href="terms.html" class="footer-link" style="font-size: 0.75rem;">Terms of Architecture</a>
+          <a href="sitemap.xml" class="footer-link" style="font-size: 0.75rem;">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Quick Spec Modal Dialog -->
+  <div class="modal-overlay" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="modal-case-title">
+    <div class="modal-dialog">
+      <button class="modal-close-btn" aria-label="Close dialog">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <line x1="18" y1="6" x2="6" y2="18"/>
+          <line x1="6" y1="6" x2="18" y2="18"/>
+        </svg>
+      </button>
+      <h3 id="modal-case-title" style="margin-bottom: 1rem;">Case Study Specifications</h3>
+      <div id="modal-case-body"></div>
+      <div style="margin-top: 1.5rem; display: flex; justify-content: flex-end;">
+        <a href="case-study.html" class="btn btn-primary btn-sm">Read Full Study &rarr;</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main JavaScript Engine -->
+  <script src="js/main.js"></script>
+</body>
+</html>

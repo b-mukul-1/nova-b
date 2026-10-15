@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://novatech-solutions.example/sitemap.xml
